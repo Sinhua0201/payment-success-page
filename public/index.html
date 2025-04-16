@@ -68,5 +68,14 @@
     <p>Thank you! Your registration and payment have been received.</p>
     <p>We’ve sent you a confirmation email.</p>
   </div>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const redirect = urlParams.get('redirect') || 'http://localhost:3000';
+    setTimeout(() => {
+      window.location.href = redirect;
+    }, 3000);
+  </script>
+  
 </body>
 </html>
