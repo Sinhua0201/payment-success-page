@@ -71,7 +71,7 @@
 
   <script>
     const urlParams = new URLSearchParams(window.location.search);
-    const redirect = urlParams.get('redirect') || 'http://localhost:3000';
+    const redirect = urlParams.get('redirect') || 'http://localhost:3000/TrackEvent';
     setTimeout(() => {
       window.location.href = redirect;
     }, 3000);
