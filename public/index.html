@@ -73,7 +73,7 @@
     const urlParams = new URLSearchParams(window.location.search);
     const redirect =
   urlParams.get('redirect') ||
-  (window.location.hostname === 'localhost' ? 'http://localhost:3000/TrackEvent': 'http://localhost:3000/TrackEvent');
+  (window.location.hostname === 'localhost' ? 'http://localhost:3000/TrackEvent': 'https://master.ducfla0h1kgoe.amplifyapp.com/TrackEvent');
     setTimeout(() => {
       window.location.href = redirect;
     }, 3000);
